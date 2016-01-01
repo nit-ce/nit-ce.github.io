@@ -87,7 +87,31 @@ gen test.sh 'for x in regex main hash tbl pic; do+	./$x+done'
 cd ..
 # students
 gen doc/std.txt "963212007+963212013+963112131+953120026+953220044+953120130+953220062+963212078+953120125+963112122+963112123+963112129+963112005+963112138+963112080+963112080+963212018+963112065+963212045+963112068+963112079+953120080+963112101+963112111+963112126"
+echo "x/zzz/ main.c tbl.c example2.c" >>doc/ex1
+echo "abc/123/ regex.c README" >>doc/ex1
+echo "a/b/c/ tbl.c tbl.h" >>doc/ex1
+echo "99/3/17/ lib.c regex.h" >>doc/ex1
+echo "nit/oslab/ example1.c man.c" >>doc/ex1
+echo "raw/hyph/ hyph.c hyph.h util.h" >>doc/ex1
+echo "raw/x/55/ hash.c test.sh" >>doc/ex1
+echo "raw/logs/1/ guide.txt log.txt" >>doc/ex1
+echo "raw/logs/1/ prep.c std.txt" >>doc/ex1
+echo "copy/str/bu/ str.c pic.c" >>doc/ex1
+echo "backup/c/1/ tbl.c str.c" >>doc/ex1
+echo "backup/ex/ example1.c lib.h lib.c" >>doc/ex1
+echo "six/job/6 prep.c str.c man.c" >>doc/ex1
+echo "six/6/six regex.c guide.txt" >>doc/ex1
 mkdir doc/std
+# The first exercise
+#i="1"
+#cat doc/std.txt | while read S; do
+#	echo "Hope you enjoy it $S!" >doc/std/$S
+#	cat doc/ex1 doc/ex1 | head -n$i | tail -n1 >>doc/std/$S
+#	i="`expr $i + 1`"
+#done
+gen doc/ex2 "34+94+19+88+90+78+45+47+36+4+8+56+21+82+96+31+42+81+23+43+72+59+86+98"
+i="1"
 cat doc/std.txt | while read S; do
-	echo "Hope you enjoy it $S!" >>doc/std/$S
+	cat doc/ex2 | head -n$i | tail -n1 >>doc/std/$S
+	i="`expr $i + 1`"
 done
