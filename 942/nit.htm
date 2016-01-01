@@ -1,0 +1,173 @@
+<html>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<header><title>NIT Courses - Spring 1395</title></header>
+<body>
+<h1>Compilers</h1>
+<p>
+Notes and programming assignments:
+<ul>
+<li><a href="cdp1.pdf">Phase #1</a>: lexical analysis (deadline 94/12/14).
+</li>
+<li><a href="cdp3.pdf">Phase #2</a>: syntax analysis (deadline 95/2/19).
+</li>
+<li><a href="cdp4.pdf">Phase #3</a>: intermediate code generation.
+</li>
+<li><a href="cdm.pdf">Midterm</a> and <a href="cdf.pdf">final</a> exams.
+</li>
+</ul>
+<!--
+<ul>
+<li>Quiz, midterm, and final <a href="cdg.pdf">grades</a>; the last
+page shows the troff code used for calculating the final grades.
+</li>
+</ul>
+-->
+
+<p>
+About the programming assignment:
+<ul>
+<li><a href="cdp0.pdf">This</a> introduces TSLNCC (The Simple Language of NIT Compiler Course).
+</li>
+<li><a href="cdp2.pdf">This</a> introduces LLVM and
+shows how to generate LLVM code from TSLNCC programs
+(for more information consult
+<a href="http://llvm.lyngvig.org/Articles/Mapping-High-Level-Constructs-to-LLVM-IR">this</a>
+page).
+</li>
+<li><a href="./tsl.tar.gz">Some</a> of the tests, using which the assignments are evaluated.
+</li>
+</ul>
+
+<p>
+Main text:
+
+<ul>
+<li>A.V. Aho, M.S. Lam, R. Sethi, J.D. Ullman,
+Compilers: Principles, Techniques, and Tools, 2nd edition,
+Addison Wesley, 2007.
+</li>
+</ul>
+
+<p>
+Supplementary resources:
+<ul>
+<li>A.W. Appel, Modern Compiler Implementation in C,
+Cambridge University Press, 1998.
+</li>
+</ul>
+
+<p>
+<hr>
+
+<h1>Operating Systems</h1>
+<p>
+Writing assignments:
+<ul>
+<li>Assignment #1 (deadline 1395/1/30):
+exercises 3.8, 3.9, 3.12, 3.15, 3.17, 4.7, 4.8, 4.9, 4.11 from the main text.
+</li>
+<li>Assignment #2 (deadline 1395/2/8):
+exercises 5.8, 5.13, 5.16, 5.18, 5.19, 5.20, 5.32, 5.33, 5.35 from the main text.
+</li>
+<li>Assignment #3 (deadline 1395/2/22):
+6.10, 6.13, 6.15, 6.17, 6.19, 6.23, 6.24.
+</li>
+<li>Assignment #4 (deadline 1395/3/16):
+7.18, 7.22, 8.20, 8.23, 8.28, 9.19, 9.21, 10.10, 10.11.
+</li>
+</ul>
+
+<p>
+Notes:
+<ul>
+<li>If you are curious to know how system calls are invoked,
+the following files perform system calls
+for different architectures in Linux:
+<a href="http://repo.or.cz/neatlibc.git/blob/HEAD:/x86/syscall.s">X86</a>,
+<a href="http://repo.or.cz/neatlibc.git/blob/HEAD:/arm/syscall.s">ARM32</a>, and
+<a href="http://repo.or.cz/neatlibc.git/blob/HEAD:/x64/syscall.s">X86-64</a>.
+</li>
+<li>To better understand what OS kernels store for each process,
+have a look the proc struct in
+<a href="https://github.com/mit-pdos/xv6-public/blob/master/proc.h">proc.h</a> for XV6.
+</li>
+<li>In XV6, <a href="https://github.com/mit-pdos/xv6-public/blob/master/proc.c">proc.c</a>
+manages the processes and includes a basic per-processor scheduler.
+How does it cope with concurrent accesses to the process table (ptable)?
+What is the scheduling algorithm used for choosing the process to run?
+</li>
+<li><a href="osq.pdf">Quizzes</a>.
+</li>
+<li><a href="osm.pdf">Midterm</a> and <a href="osf.pdf">final</a> exams.
+</li>
+<li>Optional <a href="osp.pdf">programming assignments</a>.
+</li>
+</ul>
+<!--
+<ul>
+<li>Midterm and final <a href="osg.pdf">grades</a>; the last
+page shows the troff code used for calculating the final grades.
+</li>
+</ul>
+-->
+
+<p>
+Laboratory: assignments
+<a href="oslab1.pdf">#1</a>,
+<a href="oslab2.pdf">#2</a>,
+<a href="oslab3.pdf">#3</a>,
+<a href="oslab4.pdf">#4</a>,
+<a href="oslab5.pdf">#5</a>,
+<a href="oslab6.pdf">#6</a>,
+<a href="oslab7.pdf">#7</a> (<a href="ex7.c">ex7.c</a>),
+<a href="oslab8.pdf">#8</a>,
+<a href="oslab9.pdf">#9</a> (<a href="ex9.c">ex9.c</a>).
+Final exam
+<a href="oslabf1.pdf">#1</a> (<a href="f01.c">f01.c</a>),
+<a href="oslabf2.pdf">#2</a> (<a href="f02.c">f02.c</a>),
+<a href="oslabf3.pdf">#3</a> (<a href="f03.c">f03.c</a>),
+<a href="oslabf4.pdf">#4</a> (<a href="f04.c">f04.c</a>),
+<a href="oslabf5.pdf">#5</a> (<a href="f05.c">f05.c</a>),
+<a href="oslabf6.pdf">#6</a> (<a href="f06.c">f06.c</a>).
+
+<p>
+Main text:
+<ul>
+<li>A. Silberschatz, P.B. Galvin, G. Gagne,
+Operating System Concepts, 9th edition,
+John Wiley & Sons, 2013.
+</li>
+</ul>
+
+<p>
+Supplementary resources:
+
+<ul>
+<li>A.S. Tanenbaum, H. Bos,
+Modern Operating Systems, 4th edition,
+Pearson Prentice Hall, 2015.
+</li>
+<li>R. Cox, F. Kaashoek, R. Morris,
+XV6: a simple, Unix-like teaching operating system,
+Draft available <a href="https://pdos.csail.mit.edu/6.828/2014/xv6/book-rev8.pdf">here</a>.
+</li>
+</ul>
+
+<p>
+<hr>
+
+<p>
+To contact me, write to gholamirudi at nit dot ac dot ir.
+I shall be gratified to receive any suggestions regarding my
+admittedly imperfect lectures.
+
+<p>
+<a href="proj.pdf">Suggestions</a> for undergraduate project course.
+
+<p>
+<!--
+My academic <a href="comm.pdf">comments</a>.
+-->
+
+</body>
+</html>
